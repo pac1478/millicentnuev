@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*{
+    text-decoration: none;
+
+}
+
+.body{
+    background-color: black;
+}
+
+/*corrijo estilos navbar boostrap*/
+
+.logomilic{
+    width: 70px;
+}
+
+.navbarstl__text{
+    font-size: 24px;
+    
+}
+
+/*imagen grande del index*/
+
+.divindex__imggrande{
+    width: 100%;
+    object-fit: cover;
+
+}
+
+/*armo grid del index*/
+
+.indexbody{
+    margin-top: 20px;
+
+}
+
+.indexbody__contil{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "img txt";
+    width: 100%;
+
+}
+
+.indexbody__imgl{
+    grid-area: img;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+
+.indexbody__txtr{
+ 
+    grid-area: txt;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 30px;
+    font-size: 30px;
+
+}
+
+.indexbody__contir{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "txt img";
+    width: 100%;
+
+}
+
+.indexbody__imgr{
+    grid-area: img;
+    width: 100%;
+    object-fit: cover;
+}
+
+.indexbody__txtl{
+    text-decoration: none;
+    grid-area: txt;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end   ; 
+    margin-right: 30px;
+    font-size: 30px;
+
+}
+
+
+/*armo el footer*/
+
+.footer__divlog{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.footer__img{
+    display: flex;
+    width: 50px;
+
+}
+
+.footer__txt{
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+    color: rgba(161, 150, 150, 0.349);
+    margin-top: 20px;
+}
+
+/*Armo la parte navegable de seguridad*/
+
+.h1seguridad{
+    color: white;
+    text-align: center;
+    font-style: bold;
+    font-size: 72px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.h2seguridad{
+    color: white;
+    text-align: center;
+    font-style: bold;
+    font-size: 32px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.imgseguridad{
+    width: 100%;
+}
+
+.indexbody__txtrj{
+ 
+    grid-area: txt;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 20px;
+    font-size: 24px;
+
+}
+
+.indexbody__txtlj{
+    text-decoration: none;
+    grid-area: txt;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end   ; 
+    margin-right: 10px;
+    margin-left: 20px;
+    font-size: 24px;
+    text-align: justify;
+
+}
