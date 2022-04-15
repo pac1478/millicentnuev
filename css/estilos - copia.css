@@ -17,13 +17,11 @@
 /*corrijo estilos navbar boostrap*/
 
 .logomilic{
-    width: 100px;
+    width: 70px;
 }
 
-
-
 .navbarstl__text{
-    font-size: 20px;
+    font-size: 24px;
     
 }
 
@@ -58,9 +56,6 @@
 
 }
 
-.indexbody__imgl:hover{
-
-}
 
 .indexbody__txtr{
  
@@ -200,21 +195,6 @@
     padding: 20px;
     box-sizing: border-box;
     
-}
-.formcontacto__dato:focus{
-    border-color: red;
-    border-style: solid;
-    font-style: bold;
-}
-
-.formcontacto__texto:focus{
-    border-color: red;
-    border-style: solid;
-    font-style: bold;
-}
-
-.formcontacto__boton:hover{
-    background-color: red;
 }
 
 .formcontacto__dato, .formcontacto__texto {
