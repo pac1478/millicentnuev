@@ -58,9 +58,7 @@
 
 }
 
-.indexbody__imgl:hover{
 
-}
 
 .indexbody__txtr{
  
@@ -363,6 +361,7 @@
 .bodycontacto{
     background-image: url(../assets/images/electricidad.jpg);
     background-size: 100vw 100vh;
+  
     background-attachment: fixed;
 }
 .formcontacto{
