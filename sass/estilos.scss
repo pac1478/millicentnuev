@@ -1,6 +1,11 @@
 $background-color: black;
 @import "txtcolor";
 
+$focuscolor: (
+    ´impacto´: red,
+    ´simple´: black
+    )
+;
 
 
 
@@ -65,18 +70,11 @@ $background-color: black;
 
 }
 
-
+/*uso extend*/
 
 .indexbody__txtr{
- 
-    grid-area: txt;
-    color: $txtcolor;   
-    display: flex;
-    align-items: center;
+     @extend .indexbody__txtl;
     justify-content: flex-start;
-    margin-left: 30px;
-    font-size: 30px;
-
 }
 
 .indexbody__contir{
@@ -95,19 +93,23 @@ $background-color: black;
 }
 
 .indexbody__txtl{
-    text-decoration: none;
     grid-area: txt;
-    color: $txtcolor;
+    color: $txtcolor;   
     display: flex;
     align-items: center;
-    justify-content: flex-end   ; 
-    margin-right: 30px;
+    justify-content: flex-end;
+    margin-left: 30px;
     font-size: 30px;
-
 }
 
 
 /*armo el footer*/
+
+@mixin foot ($display, $width) {
+    display: $display;
+    width: $width;
+
+}
 
 .footer__divlog{
     margin-top: 40px;
@@ -115,11 +117,14 @@ $background-color: black;
     justify-content: space-around;
 
 }
-
+ /*aplico mixin*/ 
 .footer__img{
-    display: flex;
-    width: 50px;
 
+    @include foot(flex, 50px )
+
+/*    display: flex;
+    width: 50px;
+*/
 }
 
 .footer__txt{
@@ -213,7 +218,7 @@ $background-color: black;
 }
 
 .formcontacto__texto:focus{
-    border-color: red;
+    border-color: map-get($map: $focuscolor, $key: ´impacto´ );
     border-style: solid;
     font-style: bold;
 }
