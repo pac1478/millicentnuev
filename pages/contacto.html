@@ -46,19 +46,22 @@
         </div>
     </nav>
 
-    <form id="formcontacto" contaaction="contactos.php" method="post" class="formcontacto" action="../php/enviar.php" >
 
-      
     <h3 class="formcontacto__h3">
       Dejanos tus datos y te estaremos contactando.
     </h3>
+
+    <form id="formcontacto"  method="post" class="formcontacto" action="https://formspree.io/f/mdobynqq" >
+
+      
+   
 
        
         <br>
             <input type="text" name="nombre" required placeholder="Nombre*" class="formcontacto__dato">
             <input type="tel" name="telefono" placeholder="Teléfono" class="formcontacto__dato">
             <input type="email" name="email" required placeholder="E-Mail" class="formcontacto__dato">
-            <textarea name="mensaje" placeholder="Dejanos tu mensaje aquí" class="formcontacto__texto" ></textarea>
+            <textarea name="mensaje" required placeholder="Dejanos tu mensaje aquí" class="formcontacto__texto" ></textarea>
             
   
         <div>
