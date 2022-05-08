@@ -1,336 +1,329 @@
-*{
-    margin: 0;
-    margin-top: 10px;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-*{
-    text-decoration: none;
-
+* {
+  text-decoration: none;
 }
 
-.body{
-    background-color: black;
+.body {
+  background-color: black;
 }
 
 /*corrijo estilos navbar boostrap*/
-
-.logomilic{
-    width: 100px;
+.logomilic {
+  width: 100px;
 }
 
-
-
-.navbarstl__text{
-    font-size: 20px;
-    
+.navbarstl__text {
+  font-size: 20px;
 }
 
 /*imagen grande del index*/
+.divindex__imggrande {
+  width: 100%;
+  object-fit: cover;
+}
 
-.divindex__imggrande{
-    width: 100%;
-    object-fit: cover;
-
+.h2bodyindex {
+  font-size: 28px;
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-right: 20px;
+  margin-left: 20px;
+  font-style: bold, italic;
 }
 
 /*armo grid del index*/
-
-.indexbody{
-    margin-top: 20px;
-
+.indexbody {
+  margin-top: 20px;
 }
 
-.indexbody__contil{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "img txt";
-    width: 100%;
-
+.indexbody__contil {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "img txt";
+  width: 100%;
 }
 
-.indexbody__imgl{
-    grid-area: img;
-    width: 100%;
-    object-fit: cover;
-
+.indexbody__imgl {
+  grid-area: img;
+  width: 100%;
+  object-fit: cover;
 }
 
-
-
-.indexbody__txtr{
- 
-    grid-area: txt;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-left: 30px;
-    font-size: 30px;
-
+.indexbody__imgl:hover {
+  size: 102%;
+  border-style: double;
+  border-color: red;
 }
 
-.indexbody__contir{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "txt img";
-    width: 100%;
-
+.indexbody__imgr:hover {
+  size: 102%;
+  border-style: double;
+  border-color: red;
 }
 
-.indexbody__imgr{
-    grid-area: img;
-    width: 100%;
-    object-fit: cover;
+/*uso extend*/
+.indexbody__txtr {
+  /*@extend .indexbody__txtl;*/
+  grid-area: txt;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 30px;
+  font-size: 48px;
 }
 
-.indexbody__txtl{
-    text-decoration: none;
-    grid-area: txt;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end   ; 
-    margin-right: 30px;
-    font-size: 30px;
-
+.indexbody__contir {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "txt img";
+  width: 100%;
 }
 
+.indexbody__imgr {
+  grid-area: img;
+  width: 100%;
+  object-fit: cover;
+}
+
+.indexbody__txtl {
+  grid-area: txt;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 30px;
+  font-size: 48px;
+}
 
 /*armo el footer*/
-
-.footer__divlog{
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-around;
-
+.footer__divlog {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
 }
 
-.footer__img{
-    display: flex;
-    width: 50px;
-
+/*aplico mixin*/
+.footer__img {
+  display: flex;
+  width: 50px;
 }
 
-.footer__txt{
-    font-size: 16px;
-    font-style: italic;
-    text-align: center;
-    color: rgba(161, 150, 150, 0.349);
-    margin-top: 20px;
+.footer__txt {
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
+  color: rgba(161, 150, 150, 0.349);
+  margin-top: 20px;
 }
 
 /*Armo la parte navegable de seguridad / elecyredes*/
-
-.h1seguridad{
-    color: white;
-    text-align: center;
-    font-style: bold;
-    font-size: 72px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+.h1seguridad {
+  color: white;
+  text-align: center;
+  font-style: bold;
+  font-size: 72px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-.h2seguridad{
-    color: white;
-    text-align: center;
-    font-style: bold;
-    font-size: 32px;
-    margin-top: 40px;
-    margin-bottom: 50px;
+.h2seguridad {
+  color: white;
+  text-align: center;
+  font-style: bold, italic;
+  font-size: 32px;
+  margin-top: 40px;
+  margin-bottom: 50px;
 }
 
-.imgseguridad{
-    width: 100%;
+.imgseguridad {
+  width: 100%;
 }
 
-.indexbody__txtrj{
- 
-    grid-area: txt;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    text-align: justify;
-    margin-left: 10px;
-    margin-right: 20px;
-    font-size: 24px;
-
+.indexbody__txtrj {
+  grid-area: txt;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: justify;
+  margin-left: 10px;
+  margin-right: 20px;
+  font-size: 24px;
 }
 
-.indexbody__txtlj{
-    text-decoration: none;
-    grid-area: txt;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end   ; 
-    margin-right: 10px;
-    margin-left: 20px;
-    font-size: 24px;
-    text-align: justify;
-
+.indexbody__txtlj {
+  grid-area: txt;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 10px;
+  margin-left: 20px;
+  font-size: 24px;
+  text-align: justify;
 }
 
 /*armo trabajos*/
-
+/*
 .containertrab{
     width: 90%;
     justify-content: center;
     align-items: center;
 
-}
-
+}*/
 /*armo contacto*/
-
-.bodycontacto{
-    background-image: url(../assets/images/electricidad.jpg);
-    background-size: 100%;
-    background-attachment: fixed;
-
-}
-.formcontacto{
-    width: 400px;
-    background-color: none;
-    padding: 20px;
-    box-sizing: border-box;
-    
-}
-.formcontacto__dato:focus{
-    border-color: red;
-    border-style: solid;
-    font-style: bold;
+.bodycontacto {
+  background-image: url(../assets/images/electricidad.jpg);
+  background-size: 100%;
+  background-attachment: fixed;
 }
 
-.formcontacto__texto:focus{
-    border-color: red;
-    border-style: solid;
-    font-style: bold;
+.formcontacto {
+  width: 400px;
+  background-color: none;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.formcontacto__boton:hover{
-    background-color: red;
+.formcontacto__dato:focus {
+  border-color: red;
+  border-style: solid;
+  font-style: bold;
+}
+
+/*hago el map*/
+.formcontacto__texto:focus {
+  border-color: red;
+  border-style: solid;
+  font-style: bold;
+}
+
+.formcontacto__boton:hover {
+  background-color: red;
 }
 
 .formcontacto__dato, .formcontacto__texto {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 18px;
+  box-sizing: border-box;
+  border: none;
+}
+
+.formcontacto__texto {
+  min-height: 100px;
+  max-height: 200px;
+  box-sizing: border-box;
+}
+
+.formcontacto__boton {
+  width: 70px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.formcontacto__h3 {
+  margin-right: 10px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.card__ajuste {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.card-img-top:hover {
+  border-color: red;
+  border-style: double;
+  width: 105%;
+}
+
+@media (min-width: 10px) and (max-width: 576px) {
+  /*index*/
+  .indexbody__contil {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "img" "txt";
     width: 100%;
-    padding: 10px;
-    margin-bottom: 18px;
-    box-sizing: border-box;
-    border: none;
-}
+  }
 
-.formcontacto__texto{
-    min-height: 100px;
-    max-height: 200px;
-    box-sizing: border-box;
+  .indexbody__imgl {
+    grid-area: img;
+    width: 100%;
+    object-fit: cover;
+  }
 
-}
-
-.formcontacto__boton{
-    width: 70px;
-    height: 30px;
-    border-radius: 10px;
-
-}
-
-.formcontacto__h3{
-
-    margin-right: 10px;
+  .indexbody__txtr {
+    grid-area: txt;
     color: white;
-    font-size: 20px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+  }
 
-}
+  .indexbody__contir {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "img" "txt";
+    width: 100%;
+  }
 
-@media (min-width: 10px) and (max-width: 576px){
+  .indexbody__imgr {
+    grid-area: img;
+    width: 100%;
+    object-fit: cover;
+  }
 
-/*index*/   
-    .indexbody__contil{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: "img"
-                             "txt";
-        width: 100%;
-    
-    }
-    
-    .indexbody__imgl{
-        grid-area: img;
-        width: 100%;
-        object-fit: cover;
-    
-    }
-    
-    
-    .indexbody__txtr{
-     
-        grid-area: txt;
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 30px;
-    
-    }
-    
-    .indexbody__contir{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: "img"
-                             "txt";
-        width: 100%;
-    
-    }
-    
-    .indexbody__imgr{
-        grid-area: img;
-        width: 100%;
-        object-fit: cover;
-    }
-    
-    .indexbody__txtl{
-        text-decoration: none;
-        grid-area: txt;
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center; 
-        font-size: 30px;
-    
-    }
+  .indexbody__txtl {
+    text-decoration: none;
+    grid-area: txt;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+  }
 
-
-/*seguridad / elecyredes*/
-
-.h1seguridad{
+  /*seguridad / elecyredes*/
+  .h1seguridad {
     color: white;
     text-align: center;
     font-style: bold;
     font-size: 38px;
     margin-top: 40px;
     margin-bottom: 40px;
-}
+  }
 
-.h2seguridad{
+  .h2seguridad {
     color: white;
     text-align: center;
     font-size: 24px;
     margin-top: 40px;
     margin-bottom: 50px;
-}
+  }
 
-.imgseguridad{
+  .imgseguridad {
     width: 100%;
-}
+  }
 
-.indexbody__txtrj{
- 
+  .indexbody__txtrj {
     grid-area: txt;
     color: white;
     display: flex;
@@ -340,79 +333,68 @@
     font-size: 18px;
     margin-right: 10px;
     margin-left: 10px;
+  }
 
-}
-
-.indexbody__txtlj{
+  .indexbody__txtlj {
     text-decoration: none;
     grid-area: txt;
     color: white;
     display: flex;
     align-items: center;
-    justify-content: center   ; 
+    justify-content: center;
     font-size: 18px;
     text-align: justify;
     margin-right: 10px;
     margin-left: 10px;
+  }
 
-
-}
-
-.bodycontacto{
+  .bodycontacto {
     background-image: url(../assets/images/electricidad.jpg);
     background-size: 100vw 100vh;
-  
     background-attachment: fixed;
-}
-.formcontacto{
+  }
+
+  .formcontacto {
     width: 350px;
     background-color: none;
     padding: 20px;
     box-sizing: border-box;
     margin-right: 10px;
-    
-}
+  }
 
-.formcontacto__dato, .formcontacto__texto {
+  .formcontacto__dato, .formcontacto__texto {
     width: 100%;
     padding: 10px;
     margin-bottom: 18px;
     box-sizing: border-box;
     border: none;
-}
+  }
 
-.formcontacto__texto{
+  .formcontacto__texto {
     min-height: 100px;
     max-height: 200px;
     box-sizing: border-box;
+  }
 
-}
-
-.formcontacto__boton{
+  .formcontacto__boton {
     width: 70px;
     height: 30px;
     border-radius: 10px;
+  }
 
-}
-
-.formcontacto__h3{
-
+  .formcontacto__h3 {
     margin-right: 10px;
     color: white;
     font-size: 20px;
     text-align: center;
-
+  }
 }
-
-}
-
-@media (min-width: 577px) and (max-width: 1080px){
-
-    
-.bodycontacto{
+@media (min-width: 577px) and (max-width: 1080px) {
+  .bodycontacto {
     background-image: url(../assets/images/electricidad.jpg);
     background-size: 100vw 100vh;
     background-attachment: fixed;
-}
+  }
 }
 
+/*# sourceMappingURL=estilos.css.map */

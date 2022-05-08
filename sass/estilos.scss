@@ -47,6 +47,21 @@ $focuscolor: (
 
 }
 
+.h2bodyindex{
+    font-size: 28px;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-style:bold, italic;
+}
+    
+
+
+
+
 /*armo grid del index*/
 
 .indexbody{
@@ -70,11 +85,32 @@ $focuscolor: (
 
 }
 
+.indexbody__imgl:hover{
+    size: 102%;
+    border-style: double;
+    border-color: red;
+
+}
+
+.indexbody__imgr:hover{
+    size: 102%;
+    border-style: double;
+    border-color: red;
+    
+}
+
+
 /*uso extend*/
 
 .indexbody__txtr{
-     @extend .indexbody__txtl;
-    justify-content: flex-start;
+     /*@extend .indexbody__txtl;*/
+     grid-area: txt;
+     color: $txtcolor;   
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+     margin-left: 30px;
+     font-size: 48px;
 }
 
 .indexbody__contir{
@@ -98,8 +134,8 @@ $focuscolor: (
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-left: 30px;
-    font-size: 30px;
+    margin-right: 30px;
+    font-size: 48px;
 }
 
 
@@ -149,10 +185,11 @@ $focuscolor: (
 .h2seguridad{
     color: $txtcolor;
     text-align: center;
-    font-style: bold;
+    font-style: bold, italic;
     font-size: 32px;
     margin-top: 40px;
     margin-bottom: 50px;
+
 }
 
 .imgseguridad{
@@ -174,7 +211,7 @@ $focuscolor: (
 }
 
 .indexbody__txtlj{
-    text-decoration: none;
+    
     grid-area: txt;
     color: $txtcolor;
     display: flex;
@@ -188,13 +225,13 @@ $focuscolor: (
 }
 
 /*armo trabajos*/
-
+/*
 .containertrab{
     width: 90%;
     justify-content: center;
     align-items: center;
 
-}
+}*/
 
 /*armo contacto*/
 
@@ -216,6 +253,8 @@ $focuscolor: (
     border-style: solid;
     font-style: bold;
 }
+
+/*hago el map*/ 
 
 .formcontacto__texto:focus{
     border-color: map-get($map: $focuscolor, $key: ´impacto´ );
@@ -256,6 +295,19 @@ $focuscolor: (
     font-size: 20px;
     text-align: center;
 
+}
+
+.card__ajuste{
+
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.card-img-top:hover{
+    border-color: red;
+    border-style: double;
+    width: 105%;
 }
 
 @media (min-width: 10px) and (max-width: 576px){
